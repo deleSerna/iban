@@ -1,0 +1,25 @@
+<!-- All semantics and rules taken from https://en.wikipedia.org/wiki/International_Bank_Account_Number#Validating_the_IBAN -->
+<?xml version="1.0"?>
+<countries>
+
+	<country code="DE">
+	     <!-- Some countries have constant check digit. We will directly use that value rather than creating check code.-->
+	    <constantCheckDigit></constantCheckDigit>
+		<bbnFormat>18n</bbnFormat>
+		<bbnPattern>bbbbbbbbcccccccccc</bbnPattern>
+	</country>
+	
+	<country code="AT">
+	    <constantCheckDigit></constantCheckDigit>
+		<bbnFormat>16n</bbnFormat>
+		<bbnPattern>bbbbbccccccccccc</bbnPattern>
+	</country>
+	
+	<country code="NL">
+	    <constantCheckDigit></constantCheckDigit>
+		<bbnFormat>4a,10n</bbnFormat>
+		<bbnPattern>bbbbcccccccccc</bbnPattern>
+	</country>
+	
+	
+</countries>
